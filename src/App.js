@@ -1,13 +1,13 @@
-import React from 'react';
-
+import React, {Fragment} from 'react';
+import AppMenu from './pages/Header/header';
 
 
 const App = () => {
-  return (
-    <div className="App">
-
-    </div>
-  );
+    return (
+        <Fragment>
+            <AppMenu/>
+        </Fragment>
+    );
 }
 
 export default App;
