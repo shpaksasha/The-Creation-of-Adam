@@ -35,12 +35,14 @@ export const useStyles = makeStyles(theme => ({
         fontSize: '16px',
         fontFamily: 'Roboto, sans-serif'
     },
+
+    icon: {
+        textDecoration: 'none',
+    },
+
     eye: {
         display: 'flex',
         alignItems: 'center',
-        textDecoration: 'none',
-    },
-    icon: {
         textDecoration: 'none',
     },
     see: {
