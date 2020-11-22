@@ -5,10 +5,12 @@ export const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         width: '100%',
         display: 'flex',
-        backgroundColor: '#eceff1',
+        backgroundColor: '',
         padding: '0rem 6.25rem',
         justifyContent: 'space-between',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        opacity: 1,
+        zIndex:-1,
     },
 
     links: {
@@ -25,15 +27,15 @@ export const useStyles = makeStyles(theme => ({
         color: '#828282',
         fontSize: '15px',
         lineHeight: '24px',
-        fontFamily: 'Roboto, sans-serif'
+        fontFamily: 'Work Sans'
     },
 
     linkActive: {
         paddingBottom: '5px',
         borderBottom: '2px solid #37474f',
         color: '#37474f',
-        fontSize: '16px',
-        fontFamily: 'Roboto, sans-serif'
+        fontSize: '15px',
+        fontFamily: 'Work Sans'
     },
 
     icon: {
@@ -47,10 +49,11 @@ export const useStyles = makeStyles(theme => ({
     },
     see: {
         width: '100%',
-        color: '#FFFFFF',
+        // color: '#FFFFFF',
+        color: '#303f9f',
         fontSize: '16px',
         letterSpacing: '120%',
-        fontFamily: 'Montserrat',
+        fontFamily: 'Work Sans',
         paddingLeft: '8px',
     },
 
