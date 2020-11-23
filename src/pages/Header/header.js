@@ -48,7 +48,6 @@ const AppMenu = () => {
                 </NavLink>
             </Icon>
         </Typography>
-
     </Toolbar>
     )
 };
