@@ -1,6 +1,8 @@
 import React from 'react';
-import {makeStyles} from "@material-ui/core/styles";
-import tower from "../../background/greece.jpeg";
+import {makeStyles} from '@material-ui/core/styles';
+import tower from '../../background/greece.jpeg';
+
+
 
 const useStyles = makeStyles(theme =>({
     root: {
@@ -12,9 +14,8 @@ const useStyles = makeStyles(theme =>({
         margin: 0,
         padding: 0,
         position: 'relative',
-        // background: 'linearGradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
         '&:before': {
-            content: "",
+            content: '',
             backgroundColor: 'rgba(0, 0, 0, 0.6)',
             position: 'absolute',
             bottom: 0,
