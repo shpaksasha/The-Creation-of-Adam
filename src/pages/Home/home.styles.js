@@ -7,6 +7,7 @@ export const useStyles = makeStyles(theme => ({
         backgroundPosition: 'bottom',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
+        backgroundOrigin: 'border-box',
         width: '100%',
         height: '100vh',
         margin: 0,

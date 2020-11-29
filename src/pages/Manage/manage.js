@@ -6,7 +6,7 @@ import tower from '../../background/greece.jpeg';
 
 const useStyles = makeStyles(theme =>({
     root: {
-        backgroundImage: `url('${tower}')`,
+        backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, .3), rgba(0,0,0, 1)), url('${tower}')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         width: '100%',
@@ -14,7 +14,6 @@ const useStyles = makeStyles(theme =>({
         margin: 0,
         padding: 0,
         position: 'relative',
-        // background: 'linearGradient(to top, #00000, #fffff)',
         '&:after': {
             content: '',
             backgroundColor: 'rgba(0, 0, 0, 0.6)',
