@@ -14,7 +14,8 @@ const useStyles = makeStyles(theme =>({
         margin: 0,
         padding: 0,
         position: 'relative',
-        '&:before': {
+        // background: 'linearGradient(to top, #00000, #fffff)',
+        '&:after': {
             content: '',
             backgroundColor: 'rgba(0, 0, 0, 0.6)',
             position: 'absolute',
