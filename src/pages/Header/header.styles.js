@@ -13,7 +13,6 @@ export const useStyles = makeStyles(theme => ({
         justifyContent: 'space-between',
         boxSizing: 'border-box',
         opacity: 1,
-
     },
 
     links: {

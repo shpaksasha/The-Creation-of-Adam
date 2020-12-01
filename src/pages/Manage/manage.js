@@ -1,12 +1,13 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import tower from '../../background/greece.jpeg';
+import diva from '../../background/diva.jpg';
+import {Button, Grid, Typography} from '@material-ui/core';
 
 
-
-const useStyles = makeStyles(theme =>({
+const useStyles = makeStyles(theme => ({
     root: {
-        backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, .3), rgba(0,0,0, 1)), url('${tower}')`,
+        // backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(0,0,0, 1)), url('${diva}')`,
+        backgroundImage: `url('${diva}')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         width: '100%',
@@ -23,14 +24,46 @@ const useStyles = makeStyles(theme =>({
             left: 0,
             right: 0,
         }
+    },
+    caption: {
+        fontSize: '58px',
+        color: '#ffffff',
+        fontWeight: 600,
+        fontFamily: 'Crimson Text',
+        lineHeight: '87px',
+        letterSpacing: '0.05em',
+    },
+    block: {
+        textAlign: 'center',
+        margin: '270px auto'
+    },
+    button: {
+        fontFamily: 'Crimson Text',
+        fontSize: '18px',
+        lineHeight: '25px',
+        color: '#ffffff',
+        letterSpacing: '0.05em',
+        textTransform: 'none',
+        marginTop: '27px',
+        width: '204px',
+        height: '56px',
+        background: '#D09338',
+        borderRadius: '2px',
+        boxShadow: '0px 2px 6px rgba(111, 81, 24, 0.45)',
     }
 }))
 
 const Manage = () => {
     const classes = useStyles();
-    return(
+    return (
         <div className={classes.root}>
-
+            <Grid container md={12}>
+                <Grid item md={12} className={classes.block}>
+                    <Typography className={classes.caption}>Vatican Museums</Typography>
+                    <Button variant='contained' className={classes.button}>Reserve tickets</Button>
+                    <Typography>tickets starting from €8</Typography>
+                </Grid>
+            </Grid>
         </div>
     )
 };
