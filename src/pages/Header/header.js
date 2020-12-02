@@ -20,7 +20,7 @@ const AppMenu = () => {
                 </NavLink>
             </Typography>
             <Typography className={classes.title}>
-                <NavLink className={classes.link}  activeClassName={classes.linkActive} to='/guided'>
+                <NavLink className={classes.link}  activeClassName={classes.linkActive} to='/tickets'>
                     Guided tours
                 </NavLink>
             </Typography>
