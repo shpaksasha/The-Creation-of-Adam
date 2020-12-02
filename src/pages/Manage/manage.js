@@ -38,8 +38,8 @@ const useStyles = makeStyles(theme => ({
         margin: '270px auto'
     },
     button: {
-        fontFamily: 'Crimson Text',
-        fontSize: '18px',
+        fontFamily: 'Regular 400',
+        fontSize: '19px',
         lineHeight: '25px',
         color: '#ffffff',
         letterSpacing: '0.05em',
@@ -50,10 +50,30 @@ const useStyles = makeStyles(theme => ({
         background: '#D09338',
         borderRadius: '2px',
         boxShadow: '0px 2px 6px rgba(111, 81, 24, 0.45)',
+        '&:hover': {
+            background: '#ff8c00'
+        }
     },
     tickets: {
+        marginTop: '15px',
+        fontFamily: 'Regular 400 italic',
+        fontSize: '14px',
+        lineHeight: '19px',
+        letterSpacing: '0.05rem',
+        fontWeight: 'normal',
+        color: '#ffffff',
+    },
+    about: {
+        position: 'absolute',
+        fontFamily: 'Regular 400 italic',
+        fontSize: '16px',
+        lineHeight: '29px',
+        color: 'rgba(255, 255, 255, 0.5)',
+        bottom: '25px',
+        right: '100px',
+        textAlign: 'right'
+    },
 
-    }
 }))
 
 const Manage = () => {
@@ -65,6 +85,8 @@ const Manage = () => {
                     <Typography className={classes.caption}>Vatican Museums</Typography>
                     <Button variant='contained' className={classes.button}>Reserve tickets</Button>
                     <Typography className={classes.tickets}>tickets starting from €8</Typography>
+                    <Typography className={classes.about}>Pieta, Michelangelo
+                        <p>1498 —1499, Papal Basilica of St. Peter</p></Typography>
                 </Grid>
             </Grid>
         </div>
