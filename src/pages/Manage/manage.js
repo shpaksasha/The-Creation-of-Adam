@@ -50,6 +50,9 @@ const useStyles = makeStyles(theme => ({
         background: '#D09338',
         borderRadius: '2px',
         boxShadow: '0px 2px 6px rgba(111, 81, 24, 0.45)',
+    },
+    tickets: {
+
     }
 }))
 
@@ -61,7 +64,7 @@ const Manage = () => {
                 <Grid item md={12} className={classes.block}>
                     <Typography className={classes.caption}>Vatican Museums</Typography>
                     <Button variant='contained' className={classes.button}>Reserve tickets</Button>
-                    <Typography>tickets starting from €8</Typography>
+                    <Typography className={classes.tickets}>tickets starting from €8</Typography>
                 </Grid>
             </Grid>
         </div>
