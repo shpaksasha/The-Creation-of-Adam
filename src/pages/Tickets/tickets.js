@@ -1,7 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import coliseum from '../../background/coliseum.jpg';
-import {Grid, Typography} from '@material-ui/core';
+import {Grid, Typography, Button} from '@material-ui/core';
 
 
 const useStyles = makeStyles(theme => ({
@@ -10,13 +10,35 @@ const useStyles = makeStyles(theme => ({
         backgroundImage: `url('${coliseum}')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundOrigin: 'border-box',
         width: '100%',
         height: '100vh',
         margin: 0,
         padding: 0,
         position: 'relative',
     },
-
+    block: {
+        marginTop: '170px',
+        textAlign: 'center'
+    },
+    caption: {
+        fontSize: '58px',
+        color: '#ffffff',
+        fontWeight: 600,
+        fontFamily: 'Crimson Text',
+        lineHeight: '87px',
+        letterSpacing: '0.05em',
+    },
+    tickets: {
+        marginTop: '15px',
+        fontFamily: 'Regular 400 italic',
+        fontSize: '14px',
+        lineHeight: '19px',
+        letterSpacing: '0.05rem',
+        fontWeight: 'normal',
+        color: '#ffffff',
+    },
 }))
 
 
@@ -24,7 +46,31 @@ const Tickets = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-
+            <Grid container md={12}>
+                <Grid item md={12} className={classes.block}>
+                    <Typography className={classes.caption}>Online tickets</Typography>
+                    <Typography className={classes.tickets}>Select admission tickets:</Typography>
+                </Grid>
+                <Grid item md={12}>
+                    <Grid container md={12}>
+                        <Grid item md={6}>
+                            <Typography>Vatican Museums and Sistine Chapel</Typography>
+                            <Typography>For visitors who desire to visit
+                                the Vatican Museums and the Sistine Chapel.</Typography>
+                            <Button variant='contained'>
+                                Primary
+                            </Button>
+                        </Grid>
+                        <Grid item md={6}>
+                            <Typography>Lunch to the Museums</Typography>
+                            <Typography>Visit the Vatican Museums, the Sistine Chapel and enjoy lunch in the Restaurant Area.</Typography>
+                            <Button variant='contained'>
+                                Primary
+                            </Button>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
         </div>
     )
 };
