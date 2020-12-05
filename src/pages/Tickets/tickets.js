@@ -39,6 +39,20 @@ const useStyles = makeStyles(theme => ({
         fontWeight: 'normal',
         color: '#ffffff',
     },
+    blockTickets: {
+        flexGrow: 1,
+        padding: '0rem 24rem',
+        textAlign: 'center',
+        marginTop: '45px',
+    },
+    card: {
+        borderRadius: '3px',
+        background: 'rgba(0, 0, 0, 0.7)',
+        width: '360px',
+        height: '185px',
+        display: 'inline-block',
+    },
+
 }))
 
 
@@ -52,21 +66,25 @@ const Tickets = () => {
                     <Typography className={classes.tickets}>Select admission tickets:</Typography>
                 </Grid>
                 <Grid item md={12}>
-                    <Grid container md={12}>
-                        <Grid item md={6}>
+                    <Grid container md={12} className={classes.blockTickets}>
+                        <Grid item md={6} >
+                            <div className={classes.card}>
                             <Typography>Vatican Museums and Sistine Chapel</Typography>
                             <Typography>For visitors who desire to visit
                                 the Vatican Museums and the Sistine Chapel.</Typography>
                             <Button variant='contained'>
                                 Reserve tickets
                             </Button>
+                            </div>
                         </Grid>
                         <Grid item md={6}>
+                            <div className={classes.card}>
                             <Typography>Lunch to the Museums</Typography>
                             <Typography>Visit the Vatican Museums, the Sistine Chapel and enjoy lunch in the Restaurant Area.</Typography>
                             <Button variant='contained'>
                                 Reserve tickets
                             </Button>
+                            </div>
                         </Grid>
                     </Grid>
                 </Grid>
