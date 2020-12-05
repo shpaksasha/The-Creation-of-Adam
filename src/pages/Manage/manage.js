@@ -15,15 +15,15 @@ const useStyles = makeStyles(theme => ({
         margin: 0,
         padding: 0,
         position: 'relative',
-        '&:after': {
-            content: '',
-            backgroundColor: 'rgba(0, 0, 0, 0.6)',
-            position: 'absolute',
-            bottom: 0,
-            top: 0,
-            left: 0,
-            right: 0,
-        }
+        // '&:after': {
+        //     content: '',
+        //     backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        //     position: 'absolute',
+        //     bottom: 0,
+        //     top: 0,
+        //     left: 0,
+        //     right: 0,
+        // }
     },
     caption: {
         fontSize: '58px',

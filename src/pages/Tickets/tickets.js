@@ -8,23 +8,37 @@ const useStyles = makeStyles(theme => ({
     root: {
         // backgroundImage: `linear-gradient(0deg, #000000 1%, rgba(0, 0, 0, 0) 105%), url('${circle}')`,
         backgroundImage: `url('${coliseum}')`,
-        backgroundPosition: 'bottom',
+        backgroundPosition: 'center',
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundOrigin: 'border-box',
         width: '100%',
         height: '100vh',
         margin: 0,
         padding: 0,
         position: 'relative',
     },
-    block: {
-        position: 'absolute'
+
+    caption: {
+        fontSize: '58px',
+        color: '#ffffff',
+        fontWeight: 600,
+        fontFamily: 'Crimson Text',
+        lineHeight: '87px',
+        letterSpacing: '0.05em',
+    },
+    select: {
+        marginTop: '15px',
+        fontFamily: 'Regular 400 italic',
+        fontSize: '14px',
+        lineHeight: '19px',
+        letterSpacing: '0.05rem',
+        fontWeight: 'normal',
+        color: '#ffffff',
+    },
+    text: {
+        margin: '170px auto',
+        textAlign: 'center',
     },
 
-    cards: {
-        position: 'relative'
-    }
 }))
 
 
@@ -32,38 +46,10 @@ const Tickets = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Grid conteiner md={12} className={classes.block}>
-                <Typography>Online tickets</Typography>
-                <Typography>Select admission tickets:</Typography>
-                <Grid item md={6} >
-                    <Card className={classes.cards}>
-                        <CardContent>
-                            <Typography>
-                                Word of the Day
-                            </Typography>
-                            <Typography>
-                                adjective
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button>Learn More</Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                <Grid item md={6}>
-                    <Card className={classes.cards}>
-                        <CardContent>
-                            <Typography>
-                                Word of the Day
-                            </Typography>
-                            <Typography>
-                                adjective
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button>Learn More</Button>
-                        </CardActions>
-                    </Card>
+            <Grid conteiner md={12}>
+                <Grid item md={12} className={classes.text}>
+                    <Typography className={classes.caption}>Online tickets</Typography>
+                    <Typography className={classes.select}>Select admission tickets:</Typography>
                 </Grid>
             </Grid>
         </div>
