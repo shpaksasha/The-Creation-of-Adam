@@ -1,7 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import coliseum from '../../background/coliseum.jpg';
-import {Button, Card, CardActions, CardContent, Grid, Typography} from '@material-ui/core';
+import {Grid, Typography} from '@material-ui/core';
 
 
 const useStyles = makeStyles(theme => ({
@@ -17,28 +17,6 @@ const useStyles = makeStyles(theme => ({
         position: 'relative',
     },
 
-    caption: {
-        fontSize: '58px',
-        color: '#ffffff',
-        fontWeight: 600,
-        fontFamily: 'Crimson Text',
-        lineHeight: '87px',
-        letterSpacing: '0.05em',
-    },
-    select: {
-        marginTop: '15px',
-        fontFamily: 'Regular 400 italic',
-        fontSize: '14px',
-        lineHeight: '19px',
-        letterSpacing: '0.05rem',
-        fontWeight: 'normal',
-        color: '#ffffff',
-    },
-    text: {
-        margin: '170px auto',
-        textAlign: 'center',
-    },
-
 }))
 
 
@@ -46,12 +24,7 @@ const Tickets = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Grid conteiner md={12}>
-                <Grid item md={12} className={classes.text}>
-                    <Typography className={classes.caption}>Online tickets</Typography>
-                    <Typography className={classes.select}>Select admission tickets:</Typography>
-                </Grid>
-            </Grid>
+
         </div>
     )
 };
