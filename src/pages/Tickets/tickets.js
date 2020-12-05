@@ -58,14 +58,14 @@ const Tickets = () => {
                             <Typography>For visitors who desire to visit
                                 the Vatican Museums and the Sistine Chapel.</Typography>
                             <Button variant='contained'>
-                                Primary
+                                Reserve tickets
                             </Button>
                         </Grid>
                         <Grid item md={6}>
                             <Typography>Lunch to the Museums</Typography>
                             <Typography>Visit the Vatican Museums, the Sistine Chapel and enjoy lunch in the Restaurant Area.</Typography>
                             <Button variant='contained'>
-                                Primary
+                                Reserve tickets
                             </Button>
                         </Grid>
                     </Grid>
