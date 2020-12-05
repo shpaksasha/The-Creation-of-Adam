@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
         marginTop: '45px',
     },
     card: {
-        borderRadius: '3px',
+        borderRadius: '5px',
         background: 'rgba(0, 0, 0, 0.7)',
         width: '360px',
         height: '185px',
