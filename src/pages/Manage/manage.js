@@ -10,11 +10,11 @@ const useStyles = makeStyles(theme => ({
         backgroundImage: `url('${diva}')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
+        backgroundOrigin: 'border-box',
         width: '100%',
         height: '100vh',
         margin: 0,
         padding: 0,
-        position: 'relative',
         // '&:after': {
         //     content: '',
         //     backgroundColor: 'rgba(0, 0, 0, 0.6)',

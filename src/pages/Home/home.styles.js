@@ -12,6 +12,5 @@ export const useStyles = makeStyles(theme => ({
         height: '100vh',
         margin: 0,
         padding: 0,
-        position: 'relative',
     },
 }))
