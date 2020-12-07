@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme =>({
     },
 }))
 
-const Tours = (props) => {
+const Tours = () => {
     const [selectedDate, handleDateChange] = useState(new Date());
     const classes = useStyles();
     return(
