@@ -1,7 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import coliseum from '../../background/coliseum.jpg';
-import {Grid, Typography, Button} from '@material-ui/core';
+import {Button, Grid, Typography} from '@material-ui/core';
 
 
 const useStyles = makeStyles(theme => ({
@@ -51,15 +51,15 @@ const useStyles = makeStyles(theme => ({
         height: '185px',
         display: 'inline-block',
     },
-title: {
-paddingTop: '24px',
-    paddingBottom: '16px',
-    fontFamily: 'Medium italic',
-    fontSize: '16px',
-    lineHeight: '22px',
-    color: '#ffffff',
-    fontWeight: 600,
-},
+    title: {
+        paddingTop: '24px',
+        paddingBottom: '16px',
+        fontFamily: 'Medium italic',
+        fontSize: '16px',
+        lineHeight: '22px',
+        color: '#ffffff',
+        fontWeight: 600,
+    },
     description: {
         padding: '0rem 2rem',
         fontFamily: 'Medium 300 italic',
@@ -119,30 +119,33 @@ const Tickets = () => {
                 </Grid>
                 <Grid item md={12}>
                     <Grid container md={12} className={classes.blockTickets}>
-                        <Grid item md={6} >
+                        <Grid item md={6}>
                             <div className={classes.card}>
-                            <Typography className={classes.title}>Vatican Museums and Sistine Chapel</Typography>
-                            <Typography className={classes.description}>For visitors who desire to visit
-                                the Vatican Museums and the Sistine Chapel.</Typography>
-                            <Button variant='contained' className={classes.button}>
-                                Reserve tickets
-                            </Button>
+                                <Typography className={classes.title}>Vatican Museums and Sistine Chapel</Typography>
+                                <Typography className={classes.description}>For visitors who desire to visit
+                                    the Vatican Museums and the Sistine Chapel.</Typography>
+                                <Button variant='contained' className={classes.button}>
+                                    Reserve tickets
+                                </Button>
                             </div>
                         </Grid>
                         <Grid item md={6}>
                             <div className={classes.card}>
-                            <Typography className={classes.title}>Lunch to the Museums</Typography>
-                            <Typography className={classes.description}>Visit the Vatican Museums, the Sistine Chapel and enjoy lunch in the Restaurant Area.</Typography>
-                            <Button variant='contained' className={classes.button}>
-                                Reserve tickets
-                            </Button>
+                                <Typography className={classes.title}>Lunch to the Museums</Typography>
+                                <Typography className={classes.description}>Visit the Vatican Museums, the Sistine
+                                    Chapel and enjoy lunch in the Restaurant Area.</Typography>
+                                <Button variant='contained' className={classes.button}>
+                                    Reserve tickets
+                                </Button>
                             </div>
                         </Grid>
                     </Grid>
                 </Grid>
                 <Grid item md={12} className={classes.block3}>
                     <Typography className={classes.notTickets}>Tickets are not refundable.</Typography>
-                    <Typography className={classes.botDescription}>The ticket gives the right to visit the Vatican Museums and the Sistine Chapel and is valid for the day of issue. Tickets may be reserved (with a maximum of 10) up to 60 days before the date of the intended visit.</Typography>
+                    <Typography className={classes.botDescription}>The ticket gives the right to visit the Vatican
+                        Museums and the Sistine Chapel and is valid for the day of issue. Tickets may be reserved (with
+                        a maximum of 10) up to 60 days before the date of the intended visit.</Typography>
                 </Grid>
             </Grid>
         </div>
