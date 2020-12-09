@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import tours from '../../background/tours.jpg';
-import {Grid, Typography} from '@material-ui/core';
+import {Grid, TextField, Typography,} from '@material-ui/core';
 import {KeyboardDatePicker, KeyboardTimePicker, MuiPickersUtilsProvider} from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
 import 'date-fns';
@@ -39,12 +39,13 @@ const useStyles = makeStyles(theme => ({
         fontWeight: 'normal',
         color: '#ffffff',
     },
-    data: {
-
-        height: '15px',
-        color: '#ffffff',
-       background: 'rgba(0,0,0, 0.7)',
+    block: {
+        padding: '0rem 11rem',
+        textAlign: 'center',
+        justifyContent: 'center',
+        marginTop: '35px'
     }
+
 }))
 
 const Tours = () => {
@@ -53,6 +54,30 @@ const Tours = () => {
     const handleDateChange = (date) => {
         setSelectedDate(date);
     };
+
+    const [currency, setCurrency] = React.useState('EUR');
+
+    const handleChange = (event) => {
+        setCurrency(event.target.value);
+    };
+    const currencies = [
+        {
+            value: '1 ticket',
+            label: '1 ticket',
+        },
+        {
+            value: '2 ticket',
+            label: '2 ticket',
+        },
+        {
+            value: '3 ticket',
+            label: '3 ticket',
+        },
+        {
+            value: '4 ticket',
+            label: '4 ticket',
+        },
+    ];
 
     const classes = useStyles();
 
@@ -64,13 +89,12 @@ const Tours = () => {
                     <Typography className={classes.tickets}>Select date and number of tickets</Typography>
                 </Grid>
                 <Grid item md={12}>
-                    <Grid container md={12}>
-                        <Grid item md={4} className={classes.data}>
+                    <Grid container md={12} className={classes.block}>
+                        <Grid item md={4}>
                             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                                 <KeyboardDatePicker
-                                    // inputVariant='standard'
                                     // disableToolbar='true'
-                                    inputVariant="outlined"
+                                    // inputVariant="outlined"
                                     color='secondary'
                                     id="date-picker-dialog"
                                     label='1. Select date and time'
@@ -87,8 +111,40 @@ const Tours = () => {
                                 />
                             </MuiPickersUtilsProvider>
                         </Grid>
-                        {/*<Grid item md={4}></Grid>*/}
-                        {/*<Grid item md={4}></Grid>*/}
+                        <Grid item md={4}>
+                            <TextField
+                                id='outlined-helperText'
+                                helperText='Please select your currency'
+                                variant='outlined'
+                                select
+                                label='2. Select full tickets'
+                                value={currency}
+                                onChange={handleChange}
+                                SelectProps={{native: true}}>
+                                {currencies.map((option) => (
+                                    <option key={option.value} value={option.value}>
+                                        {option.label}
+                                    </option>
+                                ))}
+                            </TextField>
+                        </Grid>
+                        <Grid item md={4}>
+                            <TextField
+                                id='outlined-helperText'
+                                helperText='Please select your currency'
+                                variant='outlined'
+                                select
+                                label='3. Select reduces tickets'
+                                value={currency}
+                                onChange={handleChange}
+                                SelectProps={{native: true}}>
+                                {currencies.map((option) => (
+                                    <option key={option.value} value={option.value}>
+                                        {option.label}
+                                    </option>
+                                ))}
+                            </TextField>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>
