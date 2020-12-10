@@ -30,8 +30,8 @@ const AppMenu = () => {
                 </NavLink>
             </Typography>
             <Typography className={classes.title}>
-                <NavLink className={classes.link} activeClassName={classes.linkActive} to='/news'>
-                    News
+                <NavLink className={classes.link} activeClassName={classes.linkActive} to='/check'>
+                    Check Out
                 </NavLink>
             </Typography>
             <Typography className={classes.title}>

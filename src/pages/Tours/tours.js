@@ -64,7 +64,6 @@ const useStyles = makeStyles(theme => ({
         }
     },
     notTickets: {
-
         marginTop: '24px',
         fontFamily: 'Regular 400 italic',
         fontSize: '14px',
