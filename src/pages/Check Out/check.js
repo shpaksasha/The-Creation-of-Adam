@@ -10,6 +10,7 @@ const useStyles = makeStyles(theme => ({
         margin: 0,
         padding: 0,
         backgroundColor: '#1E1D1C',
+        position: 'relative',
     },
     caption: {
         textAlign: 'center',
@@ -28,7 +29,14 @@ const useStyles = makeStyles(theme => ({
         fontSize: '16px',
         lineHeight: '25px',
         color: '#ffffff',
-
+    },
+    textFormRight: {
+        marginBottom: '16px',
+        fontFamily: 'Regular 400 italic',
+        fontSize: '16px',
+        lineHeight: '25px',
+        color: '#ffffff',
+        marginLeft: '68px',
     },
     fieldForm: {
         marginBottom: '16px',
@@ -42,10 +50,41 @@ const useStyles = makeStyles(theme => ({
         boxSizing: 'border-box',
         backgroundColor: '#1E1D1C',
     },
-    blockForm: {
-        // display: 'inline-block'
-        // margin: '0px auto'
+    fieldFormLeft: {
+        marginBottom: '16px',
+        fontFamily: 'Regular 400 italic',
+        fontSize: '14px',
+        lineHeight: '19px',
+        color: '#5B5B5B',
+        width: '270px',
+        height: '50px',
+        border: '1px solid #ffffff',
+        boxSizing: 'border-box',
+        backgroundColor: '#1E1D1C',
+        paddingLeft: '16px'
     },
+    fieldFormRight: {
+        marginLeft: '68px',
+        marginBottom: '16px',
+        fontFamily: 'Regular 400 italic',
+        fontSize: '14px',
+        lineHeight: '19px',
+        color: '#5B5B5B',
+        width: '160px',
+        height: '50px',
+        border: '1px solid #ffffff',
+        boxSizing: 'border-box',
+        backgroundColor: '#1E1D1C',
+    },
+
+    blockForm: {
+        padding: '0rem 36.5rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: '0px auto'
+    },
+
     button: {
         fontFamily: 'Regular 400',
         width: '160px',
@@ -62,8 +101,13 @@ const useStyles = makeStyles(theme => ({
         '&:hover': {
             background: '#ff8c00'
         }
-    }
-
+    },
+    twoForm: {
+        margin: '0px auto',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 }))
 
 const CheckOut = () => {
@@ -74,20 +118,44 @@ const CheckOut = () => {
                 <Grid item md={12}>
                     <Typography className={classes.caption}>Check out</Typography>
                     <form className={classes.blockForm}>
-                        <div>
-                            <p className={classes.textForm}>Your email</p>
-                            <input required className={classes.fieldForm} type='email' placeholder='email@gmail.com'/>
-                        </div>
+                        <Grid container md={12}>
+                            <Grid item md={12}>
+                                <p className={classes.textForm}>Your email</p>
+                                <input required className={classes.fieldForm} type='email'
+                                       placeholder='email@gmail.com'/>
+                            </Grid>
+                            <Grid item md={12}>
+                                <Grid container md={12} className={classes.twoForm}>
+                                    <Grid item md={6}>
+                                        <p className={classes.textForm}>Card number</p>
+                                        <input required className={classes.fieldFormLeft} type='number' min='1' max='16'
+                                               placeholder='XXXX XXXX XXXX XXXX'/>
+                                    </Grid>
+                                    <Grid item md={6}>
+                                        <p className={classes.textFormRight}>Expiration date</p>
+                                        <input required className={classes.fieldFormRight} type='date'
+                                               placeholder='MM/YYYY'/>
+                                    </Grid>
 
-                        <div>
-                            <p className={classes.textForm}>Card number</p>
-                            <input required className={classes.fieldForm} type='number' min='1' max='16'
-                                   placeholder='XXXX XXXX XXXX XXXX'/>
-                        </div>
+                                    <Grid item md={6}>
+                                        <p className={classes.textForm}>Name on card</p>
+                                        <input required className={classes.fieldFormLeft} type='text'
+                                               placeholder='Write the name here'/>
+                                    </Grid>
+                                    <Grid item md={6}>
+                                        <p className={classes.textFormRight}>CVV*</p>
+                                        <input required className={classes.fieldFormRight} type='number'
+                                               placeholder='000'/>
 
-                        <Button className={classes.button} type='submit'>
-                            Confirm and pay
-                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                            <Grid item md={12}>
+                                <Button className={classes.button} type='submit'>
+                                    Confirm and pay
+                                </Button>
+                            </Grid>
+                        </Grid>
                     </form>
                 </Grid>
             </Grid>
