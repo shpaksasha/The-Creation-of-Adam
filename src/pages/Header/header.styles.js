@@ -24,7 +24,7 @@ export const useStyles = makeStyles(theme => ({
     },
 
     link: {
-        color: 'rgba(0, 0, 0, 0.8)',
+        color: 'rgba(255, 255, 255, 0.5)',
         position: 'relative',
         textDecoration: 'none',
         fontSize: '15px',
@@ -38,13 +38,10 @@ export const useStyles = makeStyles(theme => ({
 
     linkActive: {
         paddingBottom: '5px',
-        borderBottom: '2px solid #37474f',
-        color: '#311b92',
+        borderBottom: '2px solid #ffffff',
+        color: '#ffffff',
         fontSize: '15px',
         fontFamily: 'Work Sans',
-        '&:hover': {
-            color: '#311b92',
-        }
     },
 
     icon: {
