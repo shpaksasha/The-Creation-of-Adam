@@ -146,7 +146,6 @@ const CheckOut = () => {
                                         <p className={classes.textFormRight}>CVV*</p>
                                         <input required className={classes.fieldFormRight} type='number'
                                                placeholder='000'/>
-
                                     </Grid>
                                 </Grid>
                             </Grid>
