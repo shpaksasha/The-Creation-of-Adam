@@ -1,6 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import {Grid} from '@material-ui/core';
+import {Grid, Typography} from '@material-ui/core';
+import {Button, Form} from 'react-bootstrap';
 
 const useStyles = makeStyles(theme => ({
     block: {
@@ -18,7 +19,22 @@ const CheckOut = () => {
         <div className={classes.block}>
             <Grid container md={12}>
                 <Grid item md={12}>
+                    <Typography>Check out</Typography>
+                    <Form>
+                        <Form.Group controlId='formBasicEmail'>
+                            <Form.Label>Your email</Form.Label>
+                            <Form.Control type='email' placeholder='email@mail.com'/>
+                        </Form.Group>
 
+                        <Form.Group controlId='formBasicPassword'>
+                            <Form.Label>Card number</Form.Label>
+                            <Form.Control type='number' placeholder='XXXX XXXX XXXX XXXX'/>
+                        </Form.Group>
+
+                        <Button variant='primary' type='submit'>
+                            Confirm and pay
+                        </Button>
+                    </Form>
                 </Grid>
             </Grid>
         </div>
