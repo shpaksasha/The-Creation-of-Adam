@@ -61,7 +61,8 @@ const useStyles = makeStyles(theme => ({
         border: '1px solid #ffffff',
         boxSizing: 'border-box',
         backgroundColor: '#1E1D1C',
-        paddingLeft: '16px'
+        paddingLeft: '16px',
+
     },
     fieldFormRight: {
         marginLeft: '68px',
