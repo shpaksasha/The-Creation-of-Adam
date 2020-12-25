@@ -109,15 +109,18 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
     },
 }))
-let count_card = 0;
-let inp_card = window.document.querySelector('#card');
-inp_card.addEventListener('keypress', function () {
-    if (count_card === 4 && count_card === 8 && count_card === 12) {
-        // count_card = 0;
-        this.value += ' ';
-    }
-    count_card++;
-});
+
+
+// let count_card = 0;
+// let inp_card = window.document.querySelector('#card');
+// inp_card.addEventListener('input', () => {
+//
+//     if (count_card === 4 && count_card === 8 && count_card === 12) {
+//         count_card = 0;
+//         this.value += ' ';
+//     }
+//     count_card++;
+// });
 
 const CheckOut = () => {
 
@@ -139,8 +142,8 @@ const CheckOut = () => {
                                 <Grid container md={12} className={classes.twoForm}>
                                     <Grid item md={6}>
                                         <p className={classes.textForm}>Card number</p>
-                                        <input required className={classes.fieldFormLeft} id='card' type='text'
-                                               placeholder='XXXX XXXX XXXX XXXX'/>
+                                        <input className={classes.fieldFormLeft} id='card' type='number'
+                                               placeholder='XXXX XXXX XXXX XXXX' pattern='[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}'/>
                                     </Grid>
                                     <Grid item md={6}>
                                         <p className={classes.textFormRight}>Expiration date</p>
@@ -174,3 +177,7 @@ const CheckOut = () => {
 };
 
 export default CheckOut;
+
+
+// let cardCode = this.value.replace(/[^\d]/g, '').substring(0,16);
+// cardCode = cardCode != '' ? cardCode.match(/.{1,4}/g).join(' ') : '';
