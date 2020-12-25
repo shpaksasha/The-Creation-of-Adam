@@ -113,11 +113,11 @@ let count_card = 0;
 let inp_card = window.document.querySelector('#card');
 inp_card.addEventListener('keypress', function () {
     if (count_card === 4 && count_card === 8 && count_card === 12) {
-        count_card = 0;
+        // count_card = 0;
         this.value += ' ';
     }
     count_card++;
-})
+});
 
 const CheckOut = () => {
 
