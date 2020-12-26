@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {Toolbar, Typography, Icon} from '@material-ui/core';
 import {NavLink} from 'react-router-dom';
 import {useStyles} from './header.styles';
