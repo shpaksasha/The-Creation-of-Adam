@@ -4,7 +4,6 @@ import {Button, Grid, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     block: {
-        // textAlign: 'center',
         width: '100%',
         height: '100vh',
         margin: 0,
@@ -113,7 +112,7 @@ const useStyles = makeStyles(theme => ({
 
 // let count_card = 0;
 // let inp_card = window.document.querySelector('#card');
-// inp_card.addEventListener('input', () => {
+// inp_card.addEventListener('keydown', () => {
 //
 //     if (count_card === 4 && count_card === 8 && count_card === 12) {
 //         count_card = 0;
@@ -123,7 +122,6 @@ const useStyles = makeStyles(theme => ({
 // });
 
 const CheckOut = () => {
-
 
     const classes = useStyles();
     return (
@@ -142,8 +140,9 @@ const CheckOut = () => {
                                 <Grid container md={12} className={classes.twoForm}>
                                     <Grid item md={6}>
                                         <p className={classes.textForm}>Card number</p>
-                                        <input className={classes.fieldFormLeft} id='card' type='number'
-                                               placeholder='XXXX XXXX XXXX XXXX' pattern='[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}'/>
+                                        <input className={classes.fieldFormLeft}
+                                               type='number'
+                                               placeholder='XXXX XXXX XXXX XXXX'/>
                                     </Grid>
                                     <Grid item md={6}>
                                         <p className={classes.textFormRight}>Expiration date</p>
@@ -177,7 +176,3 @@ const CheckOut = () => {
 };
 
 export default CheckOut;
-
-
-// let cardCode = this.value.replace(/[^\d]/g, '').substring(0,16);
-// cardCode = cardCode != '' ? cardCode.match(/.{1,4}/g).join(' ') : '';
