@@ -2,6 +2,7 @@ import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import {Button, Grid, Typography} from '@material-ui/core';
 
+
 const useStyles = makeStyles(theme => ({
     block: {
         width: '100%',
@@ -109,6 +110,15 @@ const useStyles = makeStyles(theme => ({
     },
 }))
 
+// let input_card = document.querySelector('#card');
+//
+// input_card.oninput = () =>{
+//     let num = input_card.length;
+//     if (num === 4 && num === 8 && num === 12){
+//         input_card.value += ' ';
+//     }
+// }
+
 
 // let count_card = 0;
 // let inp_card = window.document.querySelector('#card');
@@ -122,6 +132,18 @@ const useStyles = makeStyles(theme => ({
 // });
 
 const CheckOut = () => {
+
+    // const sel = document.getElementById('card');
+    //
+    // // let im = new Inputmask("99-9999999");
+    // // im.mask(sel);
+    //
+    // Inputmask({"mask": "(999) 999-9999", ... other_options, ...}).mask(sel);
+    // Inputmask("9-a{1,3}9{1,3}").mask(sel);
+    // Inputmask("9", { repeat: 10 }).mask(sel);
+    //
+    // Inputmask({ regex: "\\d*" }).mask(sel);
+    // Inputmask({ regex: String.raw`\d*` }).mask(sel);
 
     const classes = useStyles();
     return (
@@ -141,7 +163,8 @@ const CheckOut = () => {
                                     <Grid item md={6}>
                                         <p className={classes.textForm}>Card number</p>
                                         <input className={classes.fieldFormLeft}
-                                               type='number'
+                                               id='card'
+                                               type='text'
                                                placeholder='XXXX XXXX XXXX XXXX'/>
                                     </Grid>
                                     <Grid item md={6}>
