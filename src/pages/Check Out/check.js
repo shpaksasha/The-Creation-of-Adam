@@ -131,19 +131,20 @@ const useStyles = makeStyles(theme => ({
 //     count_card++;
 // });
 
-const CheckOut = () => {
+// const sel = document.getElementById('card');
+//
+// // let im = new Inputmask("99-9999999");
+// // im.mask(sel);
+//
+// Inputmask({"mask": "(999) 999-9999", ... other_options, ...}).mask(sel);
+// Inputmask("9-a{1,3}9{1,3}").mask(sel);
+// Inputmask("9", { repeat: 10 }).mask(sel);
+//
+// Inputmask({ regex: "\\d*" }).mask(sel);
+// Inputmask({ regex: String.raw`\d*` }).mask(sel);
 
-    // const sel = document.getElementById('card');
-    //
-    // // let im = new Inputmask("99-9999999");
-    // // im.mask(sel);
-    //
-    // Inputmask({"mask": "(999) 999-9999", ... other_options, ...}).mask(sel);
-    // Inputmask("9-a{1,3}9{1,3}").mask(sel);
-    // Inputmask("9", { repeat: 10 }).mask(sel);
-    //
-    // Inputmask({ regex: "\\d*" }).mask(sel);
-    // Inputmask({ regex: String.raw`\d*` }).mask(sel);
+
+const CheckOut = () => {
 
     const classes = useStyles();
     return (
