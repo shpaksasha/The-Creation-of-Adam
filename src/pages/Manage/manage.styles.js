@@ -22,6 +22,7 @@ export const useStyles = makeStyles(theme => ({
         //     right: 0,
         // }
     },
+
     caption: {
         fontSize: '58px',
         color: '#ffffff',
@@ -30,10 +31,12 @@ export const useStyles = makeStyles(theme => ({
         lineHeight: '87px',
         letterSpacing: '0.05em',
     },
+
     block: {
         textAlign: 'center',
         margin: '270px auto'
     },
+
     button: {
         fontFamily: 'Regular 400',
         fontSize: '19px',
@@ -51,6 +54,7 @@ export const useStyles = makeStyles(theme => ({
             background: '#ff8c00'
         }
     },
+
     tickets: {
         marginTop: '15px',
         fontFamily: 'Regular 400 italic',
@@ -60,6 +64,7 @@ export const useStyles = makeStyles(theme => ({
         fontWeight: 'normal',
         color: '#ffffff',
     },
+
     about: {
         position: 'absolute',
         fontFamily: 'Regular 400 italic',

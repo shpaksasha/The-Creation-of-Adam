@@ -13,10 +13,12 @@ export const useStyles = makeStyles(theme => ({
         margin: 0,
         padding: 0,
     },
+
     firstBlock: {
         textAlign: 'center',
         marginTop: '170px'
     },
+
     caption: {
         fontSize: '58px',
         color: '#ffffff',
@@ -25,6 +27,7 @@ export const useStyles = makeStyles(theme => ({
         lineHeight: '87px',
         letterSpacing: '0.05em',
     },
+
     tickets: {
         marginTop: '15px',
         fontFamily: 'Regular 400 italic',
@@ -34,12 +37,14 @@ export const useStyles = makeStyles(theme => ({
         fontWeight: 'normal',
         color: '#ffffff',
     },
+
     block: {
         padding: '0rem 11rem',
         textAlign: 'center',
         justifyContent: 'center',
         marginTop: '35px'
     },
+
     button: {
         display: 'inline-block',
         fontFamily: 'Regular 400',
@@ -58,6 +63,7 @@ export const useStyles = makeStyles(theme => ({
             background: '#ff8c00'
         }
     },
+
     notTickets: {
         marginTop: '24px',
         fontFamily: 'Regular 400 italic',
@@ -67,10 +73,12 @@ export const useStyles = makeStyles(theme => ({
         fontWeight: 'normal',
         color: '#C43333',
     },
+
     blockTwo: {
         marginTop: '90px',
         textAlign: 'center'
     },
+
     botDescription: {
         marginTop: '75px',
         padding: '0rem 6.25rem',
@@ -79,6 +87,5 @@ export const useStyles = makeStyles(theme => ({
         fontSize: '14px',
         lineHeight: '21px',
         color: 'rgba(255, 255, 255, 0.5)',
-    },
-
+    }
 }))
