@@ -34,11 +34,6 @@ const AppMenu = () => {
                         Check Out
                     </NavLink>
                 </Typography>
-                <Typography className={classes.title}>
-                    <NavLink className={classes.link} activeClassName={classes.linkActive} to='/help'>
-                        Help & FAQ
-                    </NavLink>
-                </Typography>
             </div>
             <Typography className={classes.icon}>
                 <Icon className={{fontSize: 'large'}}>

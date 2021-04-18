@@ -13,6 +13,9 @@ export const useStyles = makeStyles(theme => ({
         justifyContent: 'space-between',
         boxSizing: 'border-box',
         opacity: 1,
+        [theme.breakpoints.down('md')]: {
+            padding: '0rem 3.125rem',
+        },
     },
 
     links: {
@@ -20,7 +23,14 @@ export const useStyles = makeStyles(theme => ({
     },
 
     title: {
-        paddingRight: '90px'
+        paddingRight: '90px',
+        [theme.breakpoints.down('md')]: {
+            paddingRight: '70px'
+        },
+        [theme.breakpoints.down('sm')]: {
+            paddingRight: '60px'
+        },
+
     },
 
     link: {
@@ -33,6 +43,12 @@ export const useStyles = makeStyles(theme => ({
         '&:hover': {
             textDecoration: 'none',
             color: '#ffffff',
+        },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '12px'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '10px'
         }
     },
 
