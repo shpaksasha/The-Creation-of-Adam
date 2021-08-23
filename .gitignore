@@ -51,9 +51,6 @@ jspm_packages/
 # Typescript v1 declaration files
 typings/
 
-#WebStorm
-.idea/
-
 # Optional npm cache directory
 .npm
 
