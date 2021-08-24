@@ -3,7 +3,7 @@ import {Icon, Toolbar, Typography} from '@material-ui/core';
 import {NavLink} from 'react-router-dom';
 import {useStyles} from './header.styles';
 
-// todo: fffffffff
+// todo: hello Kseniya
 
 const AppMenu = () => {
     const classes = useStyles();
