@@ -10,7 +10,7 @@ const CheckOut = () => {
         <div className={classes.block}>
             <Grid container md={12}>
                 <Grid item md={12}>
-                    <Typography className={classes.caption}>Check out</Typography>
+                    <Typography className={classes.caption}>Check Out</Typography>
                     <form className={classes.blockForm}>
                         <Grid container md={12}>
                             <Grid item md={12}>
